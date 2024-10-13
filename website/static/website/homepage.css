@@ -1,0 +1,74 @@
+section{
+background: #00366E;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  height: 55vh;
+  color: white;
+  border-radius: 24px;
+  display: flex;
+  width: 50vw;
+}
+
+
+body{
+	background: linear-gradient(180deg, #0A253F 42%, #00457E 75%);
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-size: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.left_section{
+	  width: 50%;
+}
+
+.right_section{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+.section_title{
+	background: #000032;
+  height: 12%;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px 0px 0px 0px;
+}
+
+.top-part h1 {
+  padding-top: 3vh;
+}
+
+.left_section ul li {
+  border-top: 1px solid black;
+  padding: 2vh;
+  padding-left: 5vh;
+}
+
+section::after {
+  content: "General information about your IP";
+  height: 7vh;
+  width: 28vw;
+  background: red;
+  position: absolute;
+  top: -12%;
+  background: #000032;
+  border-radius: 25px 25px 0px 0px;
+  font-size: 1.5em;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  left: 12vw;
+}
+
+

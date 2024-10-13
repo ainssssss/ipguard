@@ -1,0 +1,41 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}Homepage{% endblock %}                                                                                                                  
+
+{% block content %}
+        {% load static %}
+			<link rel="stylesheet"  href="{% static 'website/homepage.css' %}">
+
+		<div class="left_section">
+			<h1 class="section_title">Extra Information</h1>
+			<ul>
+			<li><h1>Isp : <span style="color:#B4D9FF">{{isp}}</span></h1></li>
+			<li><h1>Org : <span style="color:#B4D9FF">{{org}}</span> </h1></li>
+			<li><h1>Lat : <span style="color:#B4D9FF">{{lat}}</span> </h1></li>
+			<li><h1>Lon : <span style="color:#B4D9FF">{{lon}}</span> </h1></li>
+			<li><h1>Proxy : <span style="color:#B4D9FF">{{proxy}}</span> </h1></li>
+			<li><h1>Hosting : <span style="color:#B4D9FF">{{hosting}}</span> </h1></li>
+
+			</ul>
+
+		</div>
+		<div style="
+        background-image: url('{% static 'website/pictures/earthbackground.png' %}');
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        " class="right_section">
+			<div class="top-part">
+				<h1>IPv4 : <span style="color:#B4D9FF">{{ipAddr}}</span></h1>
+			<h1>Region : <span style="color:#B4D9FF">{{regionName}}</span></h1>
+			<h1>City : <span style="color:#B4D9FF">{{city}}</span></h1>
+			<h1>Time Zone : <span style="color:#B4D9FF">{{timezone}}</span></h1>
+
+		</div>
+		
+
+		{% endblock %}
+
+{% block footer-content %}
+{% endblock %}

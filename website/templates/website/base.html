@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+	{% load static %}
+	<link rel="stylesheet"  href="{% static 'website/base.css' %}">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ipguard.ainslove.es/">
+	<meta property="og:title" content="This tool allows to obtain information of ips">
+	<meta property="og:description" content="It is a non-profit project that can be used to obtain information about your ip address or anyone else.">
+	<meta property="og:image" content="https://ipguard.ainslove.es/static/website/pictures/smalllogoipguard.png">
+
+</head>
+<body>
+<header>
+	<a href="/"><img src="{% static 'website/pictures/logoipguard.png' %}"></a>
+
+	<div class="header_spacer"></div>
+	<ul>
+	<li><a href="/"><h1>HOMEPAGE</h1></a></li>
+	<li><a href="/apiPage"><h1>API</h1></a></li>
+	<li><a href="/contact"><h1>PROJECT</h1></a></li>
+	</ul>
+
+	
+</header>
+<section>
+	    {% block content %}{% endblock %}
+</section>
+
+<footer>
+	<h1>All rights reserved @IPGUARD</h1>
+</footer>
+
+</body>
+</html>
