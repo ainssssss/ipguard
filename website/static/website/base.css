@@ -1,33 +1,37 @@
 @font-face {
-    font-family: 'Hammersmith One';
-    src: url('/static/website/fonts/HammersmithOne-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Hammersmith One';
+  src: url('/static/website/fonts/HammersmithOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-
-body{
-	background: linear-gradient(180deg, #0A253F 42%, #00457E 75%);
+body {
+  background: linear-gradient(180deg, #0A253F 42%, #00457E 75%);
 }
 
-*{
-	padding: 0;
-	margin: 0;
-    font-family: 'Hammersmith One', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Hammersmith One', sans-serif;
 }
 
-header{
-	background: linear-gradient(33.79deg, #000032 0%, #0E0E4D 100%);
+header {
+  background: linear-gradient(33.79deg, #000032 0%, #0E0E4D 100%);
   display: flex;
   align-items: center;
   align-content: center;
   padding: 0em 2em;
 }
 
-header ul{
-	display: flex;
+header ul {
+  display: flex;
   flex-direction: row;
   gap: 15%;
+  margin-left: 300px;
+}
+
+.logo {
+  margin-top: 8px;
 }
 
 li a {
@@ -35,13 +39,12 @@ li a {
   color: white;
 }
 
-
-.header_spacer{
-	  width: 50%;
+.header_spacer {
+  width: 50%;
 }
 
-footer{
-	position: absolute;
+footer {
+  position: absolute;
   bottom: 0;
   display: flex;
   align-content: center;
@@ -55,12 +58,11 @@ footer{
   text-transform: uppercase;
 }
 
-
 ul li {
   display: flex;
   align-items: center;
 }
 
-h1{
-	  font-size: 1.5em;
+h1 {
+  font-size: 1.5em;
 }
