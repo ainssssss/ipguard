@@ -26,8 +26,8 @@ header {
 header ul {
   display: flex;
   flex-direction: row;
-  gap: 15%;
-  margin-left: 300px;
+gap: 5%;
+  margin-left: 188px;
 }
 
 .logo {

@@ -82,3 +82,71 @@ def apiPage(request):
 
     return render(request,'website/api.html',context=context)
 
+def nrhomepage(request):
+    ipaddr = request.META.get("REMOTE_ADDR")
+    try:
+        r = requests.get("http://ip-api.com/json/{}?fields=status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,proxy,hosting,query".format(ipaddr)).json()
+        context = {
+            'ipAddr' : ipaddr,
+            'city' : r['city'],
+            'regionName' : r['regionName'],
+            'timezone' : r['timezone'],
+            'isp' : r['isp'],
+            'org' : r['org'],
+            'lat' : r['lat'],
+            'lon' : r['lon'],
+            'proxy' : r['proxy'],
+            'hosting' : r['hosting'],
+    }
+    except:
+        context = {
+            'ipAddr' : ipaddr,
+            'city' : 'No data',
+            'regionName' : 'No data',
+            'timezone' : 'No data',
+            'isp' : 'No data',
+            'org' : 'No data',
+            'lat' : 'No data',
+            'lon' : 'No data',
+            'proxy' : 'No data',
+            'hosting' : 'No data',
+    }
+
+
+    return render(request,'website/nrindex.html',context=context)
+
+def nrapiPage(request):
+    ipaddr = request.META.get("REMOTE_ADDR")
+    try:
+        r = requests.get("http://ip-api.com/json/{}?fields=status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,proxy,hosting,query".format(ipaddr)).json()
+
+        context = {
+            'ipAddr' : ipaddr,
+            'city' : r['city'],
+            'regionName' : r['regionName'],
+            'timezone' : r['timezone'],
+            'isp' : r['isp'],
+            'org' : r['org'],
+            'lat' : r['lat'],
+            'lon' : r['lon'],
+            'proxy' : r['proxy'],
+            'hosting' : r['hosting'],
+        }
+
+
+    except:
+        context = {
+            'ipAddr' : ipaddr,
+            'city' : 'No data',
+            'regionName' : 'No data',
+            'timezone' : 'No data',
+            'isp' : 'No data',
+            'org' : 'No data',
+            'lat' : 'No data',
+            'lon' : 'No data',
+            'proxy' : 'No data',
+            'hosting' : 'No data',
+    }
+
+
+    return render(request,'website/nrapi.html',context=context)
