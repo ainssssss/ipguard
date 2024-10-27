@@ -1,0 +1,39 @@
+{% extends 'website/nrbase.html' %}
+{% load static %}
+{% block title %}Homepage{% endblock %}                                                                                                                  
+
+{% block content %}
+        {% load static %}
+<link rel="stylesheet"  href="{% static 'website/api.css' %}">
+
+<div class="left_section">
+            
+            <a style="text-decoration: none;color: white;" href="https://ipguard.ainslove.es/api/city/{{ipAddr}}"> <li><h1>By : api/city/{{ipAddr}} <br>Forventet resultat : <span style="color:#B4D9FF">{{city}}</span></h1></li></a>
+                <a style="text-decoration: none;color: white;"href="https://ipguard.ainslove.es/api/proxy/{{ipAddr}}"> <li><h1>Fullmakt : api/proxy/{{ipAddr}} <br>Forventet resultat : <span style="color:#B4D9FF">{{proxy}}</span></h1></li> </a>
+
+                <a style="text-decoration: none;color: white;"href="https://ipguard.ainslove.es/api/region/{{ipAddr}}"><li><h1>Region : api/region/{{ipAddr}} <br>Forventet resultat : <span style="color:#B4D9FF">{{regionName}}</span></h1></li> </a>
+                <a style="text-decoration: none;color: white;"href="https://ipguard.ainslove.es/api/lat/{{ipAddr}}"><li><h1>Lat : api/lat/{{ipAddr}} <br>Forventet resultat : <span style="color:#B4D9FF">{{lat}}</span></h1></li></a>
+                <a style="text-decoration: none;color: white;"href="https://ipguard.ainslove.es/api/lon/{{ipAddr}}"><li><h1>Lon : api/lon/{{ipAddr}} <br>Forventet resultat : <span style="color:#B4D9FF">{{lon}}</span></h1></li></a>
+
+</ul>
+
+</div>
+<div style="
+        background-image: url('{% static 'website/pictures/bluebackground.png' %}');
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        " class="right_section">
+<div class="top-part">
+<h1>API</h1>
+                <h1>Oppdag kraften i applikasjonen vår ved å integrere dataene våre i kreasjonene dine.
+                    Bruken av denne APIen er helt gratis, så lenge du gjør mer enn 500 forespørsler per sekund.</h1>
+
+</div>
+
+
+{% endblock %}
+
+{% block footer-content %}
+{% endblock %}

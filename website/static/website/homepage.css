@@ -53,19 +53,3 @@ body {
   padding-left: 5vh;
 }
 
-section::after {
-  content: "General information about your IP";
-  height: 7vh;
-  width: 28vw;
-  background: red;
-  position: absolute;
-  top: -12%;
-  background: #000032;
-  border-radius: 25px 25px 0px 0px;
-  font-size: 1.5em;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  left: 12vw;
-}
