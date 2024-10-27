@@ -1,9 +1,9 @@
-section{
-background: #00366E;
+section {
+  background: #00366E;
   position: absolute;
   left: 50%;
   top: 55%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   height: 55vh;
   color: white;
   border-radius: 24px;
@@ -11,40 +11,39 @@ background: #00366E;
   width: 50vw;
 }
 
-
-.top-part > h1:nth-child(1){
-    font-size: 5em;
+.top-part>h1:nth-child(1) {
+  font-size: 5em;
 
 }
 
-.top-part{
-    text-align: center;
-      padding: 0vw 3vw;
+.top-part {
+  text-align: center;
+  padding: 0vw 3vw;
 }
 
-body{
-	background: linear-gradient(180deg, #0A253F 42%, #00457E 75%);
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background-size: auto;
+body {
+  background: linear-gradient(180deg, #0A253F 42%, #00457E 75%);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.left_section{
-	  width: 50%;
+.left_section {
+  width: 50%;
 }
 
-.right_section{
+.right_section {
   width: 50%;
   display: flex;
   justify-content: center;
   padding-top: 5vh;
 }
 
-.section_title{
-	background: #000032;
+.section_title {
+  background: #000032;
   height: 12%;
   text-align: center;
   display: flex;
@@ -63,47 +62,46 @@ body{
   padding: 2vh;
   list-style-type: none;
 
-.left_section ul li {
-  border-top: 1px solid black;
-  padding: 2vh;
-  padding-left: 5vh;
-}
+  .left_section ul li {
+    border-top: 1px solid black;
+    padding: 2vh;
+    padding-left: 5vh;
+  }
 
-.left_section a{
+  .left_section a {
     text-decoration: none;
     color: white;
-}
+  }
 
-section::after {
-  content: "General information about your IP";
-  height: 7vh;
-  width: 28vw;
-  background: red;
-  position: absolute;
-  top: -12%;
-  background: #000032;
-  border-radius: 25px 25px 0px 0px;
-  font-size: 1.5em;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  left: 12vw;
+  section::after {
+    content: "General information about your IP";
+    height: 7vh;
+    width: 28vw;
+    background: red;
+    position: absolute;
+    top: -12%;
+    background: #000032;
+    border-radius: 25px 25px 0px 0px;
+    font-size: 1.5em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    left: 12vw;
 
-}
+  }
 
-.top-part{
+  .top-part {
     padding: 4vh;
-  text-align: center;
-}
+    text-align: center;
+  }
 
-.top-part > h1:nth-child(1){
-      font-size: 5em;
-}
+  .top-part>h1:nth-child(1) {
+    font-size: 5em;
+  }
 
-
-.left_section  a{
+  .left_section a {
     text-decoration: none;
     color: white;
+  }
 }
-
